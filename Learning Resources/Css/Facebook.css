@@ -1,0 +1,211 @@
+/*Start GLOBAL RULES*/ 
+/*//////////////////////////////////////////////////////////
+TO KEEP CONSIDER PADDING AND BORDER WITH WIDTH AND HEIGHT */
+* {
+    box-sizing: border-box;
+}
+:root {
+    --m:#000;
+    --m2:#6b6767;
+}
+
+*::selection {
+    color: var(--m);
+    background-color: black;
+}
+/*//////////////////////////////////////////////////////////
+SMOOTH SCROLLING TO THE PAGE */
+html {
+    scroll-behavior: smooth;
+}
+/*////////////////////////////////////////////////////////////
+TO SPICEFY SPECIFIC FONT TYPE IN BODY CONTENT */
+body {
+    font-family: 'Kanit', sans-serif;
+}
+/*////////////////////////////////////////////////////////////
+TO CENTERLAIZE CONTAINER MAKE LEFT AND RIGHT MARGINE AUTO */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*//////////////////////////////////////////////////////////////
+Medea quires*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }    
+}
+/*Medium*/
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+/*Larg*/
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+ul{
+    list-style-type: none;
+}
+/*START HEADER*/
+body {
+    background-color: var(--m2);
+}
+a {
+    text-decoration: none;
+}
+/*START NAV*/
+
+nav .container  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+nav .container .links {
+    display: flex;
+    position: relative;
+}
+nav .container .links::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #680cc4d9;
+    bottom: 20px;
+}
+nav .container .links li a {
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+nav .container .links li a:hover {
+    color: #000000;
+}
+nav .container .name li a {
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+    
+    
+}
+/*END NAV*/
+
+.HEADER { 
+    background-color: #8b63b4d9;
+}
+.HEADER .container h3 {
+    letter-spacing: 5px;
+    color: black;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.heading .container{
+    display: flex;
+    justify-content: center;
+}
+/*section*/
+.Facebook .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.Facebook .container .acc {
+    background-color: #000000;
+    border-radius: 40%;
+    box-shadow: 0px 60px 50px #252e3a;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    padding: 10px;
+    padding: 0;
+    position: relative;
+
+}
+.Facebook .container .acc img:first-child {
+    width: 100%;
+    height: 40%;
+    position: relative;   
+}
+
+.Facebook .container .acc img.profile{
+    padding: 2px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    width: 35%;
+    display: flex;
+    margin: -60px auto;
+    margin-bottom: 3px;
+}
+
+.Facebook .container .acc .userinfo {
+    font-size: 14px;
+    color: white;
+    margin-left: 1px;
+    margin-top: -10px;
+    padding: 10px;
+}
+.Facebook .container .acc .userinfo .name {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.Facebook .container .acc .userinfo .name a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.Facebook .container .acc .userinfo {
+    position: relative;
+}
+.Facebook .container .acc .userinfo .hint {
+    color: #6b676767;
+    position: absolute;
+    top: 50%;
+    
+}
+/*.Facebook .container .acc::before {
+    content: 'ss';
+    background-color: wheat;
+    position: absolute;
+    width: 10%;
+    z-index: 10;
+    height: 100px;
+    background-image: url("../image/Facebooklogo.png");
+    background-repeat:repeat;
+    /*top: 15px;
+    left: 15px; 
+}
+*/
+@media (max-width:767px){
+    nav .container .name li a {
+        font-size: 25px;
+    }
+
+    div .container .text {
+        display: none;
+    }
+    nav .container .links li a {
+        display: none;
+    }
+    
+}

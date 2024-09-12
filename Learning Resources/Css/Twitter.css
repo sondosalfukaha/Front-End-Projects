@@ -1,0 +1,221 @@
+/*Start GLOBAL RULES*/ 
+/*//////////////////////////////////////////////////////////
+TO KEEP CONSIDER PADDING AND BORDER WITH WIDTH AND HEIGHT */
+* {
+    box-sizing: border-box;
+}
+:root {
+    --m:#000;
+    --m2:#6b6767;
+}
+
+*::selection {
+    color: var(--m);
+    background-color: black;
+}
+/*//////////////////////////////////////////////////////////
+SMOOTH SCROLLING TO THE PAGE */
+html {
+    scroll-behavior: smooth;
+}
+/*////////////////////////////////////////////////////////////
+TO SPICEFY SPECIFIC FONT TYPE IN BODY CONTENT */
+body {
+    font-family: 'Kanit', sans-serif;
+}
+/*////////////////////////////////////////////////////////////
+TO CENTERLAIZE CONTAINER MAKE LEFT AND RIGHT MARGINE AUTO */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*//////////////////////////////////////////////////////////////
+Medea quires*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }    
+}
+/*Medium*/
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+/*Larg*/
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+ul{
+    list-style-type: none;
+}
+/*START HEADER*/
+body {
+    background-color: var(--m2);
+}
+a {
+    text-decoration: none;
+}
+/*START NAV*/
+
+nav .container  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+nav .container .links {
+    display: flex;
+    position: relative;
+}
+nav .container .links::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #680cc4d9;
+    bottom: 20px;
+}
+nav .container .links li a {
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+nav .container .links li a:hover {
+    color: #000000;
+}
+nav .container .name li a {
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+    
+    
+}
+/*END NAV*/
+
+.HEADER { 
+    background-color: #8b63b4d9;
+}
+.HEADER .container h3 {
+    letter-spacing: 5px;
+    color: black;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.heading .container{
+    display: flex;
+    justify-content: center;
+}
+/*section*/
+.Twitter .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.Twitter .container .acc {
+    background-color: #000000;
+    border-radius: 40%;
+    box-shadow: 50px -10px 100px #252e3a;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    padding: 10px;
+    padding: 0;
+    position: relative;
+
+}
+.Twitter .container .acc::before {
+    content: '';
+    color: wheat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("../image/twitter\ logo.png");
+    background-repeat: no-repeat;
+    /*top: 15px;
+    left: 15px; */
+    z-index: 6;
+}
+.Twitter .container .acc img:first-child {
+    width: 100%;
+    position: relative;   
+}
+
+.Twitter .container .acc img.profile{
+    padding: 2px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    width: 35%;
+    display: flex;
+    margin: -50px  0 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 10px;
+    animation-name: border-move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition-delay: 0.03s;
+    position: relative;
+}
+
+@keyframes border-move {
+    0%{border:rgb(101, 140, 224) 1px solid;}
+    10%{border:#271adf5e 1px solid;}
+    20%{border:rgba(0, 0, 255, 0.301) 1px solid;}
+    30%{border:rgba(19, 50, 187, 0.315) 4px solid;}
+    40%{border:rgba(30, 90, 221, 0.329) 4px solid;}
+    50%{border:rgba(0, 153, 255, 0.418) 4px solid;}
+    60%{border:#24376dab 4px solid;}
+    70%{border:#4fb7d67a 4px solid;}
+    80%{border:#7d85b3 4px solid;}
+    90%{border:#4c00ff38 4px solid;}
+    95%{border:rgb(141, 193, 228) 4px solid;}
+    99%{border:rgb(37, 131, 194) 4px solid;}
+    100%{border:rgb(13, 128, 206) 4px solid;}
+}
+
+.Twitter .container .acc .userinfo {
+    font-size: 14px;
+    color: white;
+    margin-left: 1px;
+    margin-top: -10px;
+    padding: 10px;
+}
+.Twitter .container .acc .userinfo .name {
+    margin-bottom: -10px;
+}
+.Twitter .container .acc .userinfo p.username a {
+    color: #6b6767;
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    .Twitter .container .acc img.profile{
+        width: 30%;
+        margin-top: -50px;
+
+    }
+}
