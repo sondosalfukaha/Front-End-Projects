@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+h1 {
+  font-size: 40px;
+}
+.list-todo {
+  width: 300px;
+}
+#ListToDo {
+  margin-top: 50px;
+  position: relative;
+}
+.input {
+  display: flex;
+  align-items: center;
+}
+
+#task-input {
+  padding: 10px;
+  font-size: 20px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background: rgb(209,187,37);
+background: linear-gradient(90deg, rgba(209,187,37,1) 0%, rgba(174,194,34,0.8827906162464986) 13%, rgba(196,137,139,0.9668242296918768) 100%);
+  color: #fff;
+}
+#add-task {
+  padding: 1.5px 10px;
+  margin-left: -5px;
+  font-size: 50px;
+  cursor: pointer;
+  background: rgb(209,187,37);
+  font-weight: 600;
+  color: #fff;
+  border: none;
+}
+
+#add-task:hover {
+  opacity: 0.9;
+}
+#lists {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1px;
+  list-style: none;
+}
+.task {
+  width: 306px;
+  height: 65px;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(56, 33, 100);
+  border-left: 1px solid rgb(56, 33, 100);
+  border-right: 1px solid rgb(56, 33, 100);
+  align-items: center;
+  gap: 5px;
+  line-height: 60px;
+}
+
+.task * {
+  margin-right: 10px;
+}
+li.task {
+  font-size: 22px;
+  word-wrap: break-word;
+  word-break: break-all;
+  position: relative;
+  overflow-x: hidden;
+}
+.task input {
+  z-index: 20;
+}
+
+.completed {
+  position: relative;
+  color: gray;
+}
+.completed::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid gray;
+}
+.task button {
+  position: absolute;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  color: red;
+  line-height: 60px;
+  opacity: 0;
+  cursor: pointer;
+}
+.task:hover button {
+  opacity: 1;
+}
+#error {
+  display: none;
+  width: 300px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+}
+input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+}
