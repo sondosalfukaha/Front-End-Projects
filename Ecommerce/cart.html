@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+    <section id="header" class="">
+        <div>
+        <a href="#"><img src="img/Logo.png" alt="Palestine Logo" class="logo"></a><!--Palestain Logo-->
+        <!-- <span class="shop">shop</span> -->
+        </div>
+        <div>
+        <ul id="navbar">
+            <li><a href="index.html" class="Option">Home</a></li>
+            <li><a href="shop.html" class="Option">Shop</a></li>
+            <li><a href="Blog.html" class="Option">Blog</a></li>
+            <li><a href="About.html" class="Option">About</a></li>
+            <li><a href="contact.html" class="Option">Contact</a></li>
+            <li id="lg-bag"><a href="cart.html" class="active"><i class='bx bx-shopping-bag'></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+        </div>
+
+        <div id="mobile">
+        <a href="cart.html"><i class='bx bx-shopping-bag icon'></i></a>
+        <i id="bar" class="fas fa-outdent icon bar"></i> 
+        </div>
+    </section>
+
+    </div>
+    <div class="landing">
+    <section id="page-header" class="container">
+        <div class="text">
+        <h2>#cart</h2>
+        <p>Add your coupon code & SAVE upto 70%!</p>
+        </div>
+    
+    </section>
+    </div>
+    <section id="cart" class="container">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/T-shirt8.jpg" alt="product image"></td>
+                    <td>T-shirt بطباعة فلسطين</td>
+                    <td>139$</td>
+                    <td><input type="number" value="1"></td>
+                    <td>139.00$</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/T-shirt6.jpg" alt="product image"></td>
+                    <td>T-shirt بطباعة فلسطين</td>
+                    <td>139$</td>
+                    <td><input type="number" value="1"></td>
+                    <td>139.00$</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/T-shirt4.jpg" alt="product image"></td>
+                    <td>T-shirt بطباعة فلسطين</td>
+                    <td>139$</td>
+                    <td><input type="number" value="1"></td>
+                    <td>139.00$</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="container">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>417$</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>417$</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+    <div style="background-color: #56d1c934;">
+        <footer class="container">
+            <div class="col">
+            <img class="logo" src="img/logo.png" alt="logo" style="width: 70%;">
+            <h4>Contact Us</h4>
+            <p><span>Address:</span> Quase street-441</p>
+            <p><span>Phone Number:</span> 0771234567</p>
+            <p><span>Work Hours:</span> 10:00 AM 10:00 PM</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Policy Privacy</a>
+            <a href="#">Policy & Terms</a>
+            <a href="#">Contact us</a>
+            </div>
+            <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Subscribe</a>
+            <a href="#">Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            </div>
+            <div class="col install">
+            <h4>Install App</h4>
+            <div class="row">
+                <a href="#"><img src="img/APPSTORE.jpg" alt="APPSTORE" style="width: 50%;"></a>
+                <a href="#"><img src="img/GOOGLEPALY.jpg" alt="GOOGLEPALY" style="width: 50%;"></a>
+                </div>
+            <a href="#"><img class="pay" src="img/Payment_Methode_Banner_in_Product_Page.webp" alt="payment" style="width: 50%;"></a>
+            </div>
+            </footer>
+    </div>
+
+    <script src="JS/function.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="JS/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+</body>
+</html>
