@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites Idea</title>
+    <!--Font Awesome Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Cormorant+SC:wght@300&family=Fasthand&family=Kanit:ital,wght@0,100;0,400;0,600;0,800;1,500;1,600&family=Raleway&family=Signika+Negative:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Start Nav Bar-->
+<div class="container">
+    <div class="Header">
+        <h1 class="title">Websites Ideas</h1>
+        <ul class="nav-bar">
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#SERVICES">SERVICES</a></li>
+            <li><a href="#ABOUT US">ABOUT US</a></li>
+            <li><a href="#SOCIAL MEDIA">SOCIAL MEDIA</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!--End Nav Bar-->
+<!---Satrt Section--->
+<section>
+    <div class="container">
+        <!--
+        <img src="White.png" alt="White lamba" title="White Lamba" id="White" onclick=" let im = document.getElementById('White')
+                                                                                        if(im.src.match('White.png')){
+                                                                                            im.src = 'Yellow.png';
+                                                                                            document.getElementById('idea').style.visibility = 'visible';
+                                                                                        }
+                                                                                        else{
+                                                                                            im.src = 'White.png'
+                                                                                            document.getElementById('idea').style.visibility = 'hidden';
+                                                                                        }">
+-->
+    <p class="hint">Try To Create Your Website By Choosing The Idea from These:</p>                                                                                 
+    <select name="selectList" id="selectList" onchange="
+                                                        let val = document.getElementById('selectList').value;
+                                                        if(val == 'ListView'){
+                                                            document.getElementById('Grid').style.display = 'none';
+                                                            document.getElementById('ListView').style.display = 'block';
+                                                            document.getElementById('file').style.display = 'none';
+                                                        }
+                                                        else if(val == 'Grid'){
+                                                            document.getElementById('Grid').style.display = 'block';
+                                                            document.getElementById('ListView').style.display = 'none';
+                                                            document.getElementById('file').style.display = 'none';
+                                                        }
+                                                        else{
+                                                            document.getElementById('Grid').style.display = 'none';
+                                                            document.getElementById('ListView').style.display = 'none';
+                                                            document.getElementById('file').style.display = 'block';
+                                                        }">
+            <option value="Grid" selected>Grid</option>
+            <option value="ListView">ListView</option>
+            <option value="file">File</option>
+    </select>
+    <div class="section_first" id="ListView">
+        <!-- ListView Section -->
+        <div class="row1">
+            <i class="fa-solid fa-book"></i>
+            <div class="text">
+                <h3 class="idea_of_proj ">Book References</h3>
+                <p class="description_of_proj">index of each book</p>
+            </div>
+        </div>
+        <div class="row2">
+            <i class="fa-solid fa-cookie"></i>
+            <div class="text">
+                <h3 class="idea_of_proj">Cookies Shop</h3>
+                <p class="description_of_proj">A shop to buy the cookies</p>
+            </div>
+        </div>
+        <div class="row3">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="text">
+                <h3 class="idea_of_proj">Online Shopping</h3>
+                <p class="description_of_proj">To Shope online Items And put then on bascket</p>
+            </div>
+        </div>
+        <div class="row4">
+            <i class="fa-solid fa-gift"></i>
+            <div class="text">
+                <h3 class="idea_of_proj">Online Gift</h3>
+                <p class="description_of_proj">To Prepare And Send An Online Gift For Someone</p>
+            </div>
+        </div>
+        <div class="row5">
+            <i class="fa-solid fa-calculator"></i>
+            <div class="text">
+                <h3 class="idea_of_proj">Calculator</h3>
+                <p class="description_of_proj">Mathmatic Calculator</p>
+            </div>
+        </div>
+        <div class="row6">
+            <i class="fa-solid fa-xmark">O</i>
+            <div class="text">
+                <h3 class="idea_of_proj">XO Game</h3>
+                <p class="description_of_proj">Game Is 3*3 Matrix Game</p>
+            </div>
+        </div>
+        <div class="row7">
+            <i class="fa-solid fa-plane"></i>
+            <div class="text">
+                <h3 class="idea_of_proj ">Passengers Apointment</h3>
+                <p class="description_of_proj">Apointment Registresson System</p>
+            </div>
+        </div>
+        <div class="row8">
+            <i class="fa-solid fa-lock"></i>
+            <div class="text">
+                <h3 class="idea_of_proj">LOCKED</h3>
+                <p class="description_of_proj golden">You need to subscribe for this Idea</p>
+            </div>
+        </div>
+        <div class="row8">
+            <i class="fa-solid fa-lock"></i>
+            <div class="text">
+                <h3 class="idea_of_proj">LOCKED</h3>
+                <p class="description_of_proj golden">You need to subscribe for this Idea</p>
+            </div>
+        </div>   
+    
+    </div><!--section_first class-->
+
+    <div class="section_second" id="Grid">
+        <div id="idea">
+            <div class="idea1">
+                <i class="fa-solid fa-book"></i>
+                <h4>Book References</h4>
+                
+            </div>
+            <div class="idea2">
+                <i class="fa-solid fa-cookie fa-spin fa-spin-reverse" style="color: #a0375b;"></i>
+                <i class="fa-solid fa-utensils" style="color: #a0375b;"></i>
+                <h4>Cookies Shop</h4>
+                
+            </div>
+            <div class="idea3">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h4>Online Shopping</h4>
+                
+            </div>
+            <div class="idea4">
+                <i class="fa-solid fa-gift"></i>
+                <h4>Online Gift</h4>
+            </div>
+            <div class="idea5">
+                <i class="fa-solid fa-calculator"></i>
+                <h4>Calculator</h4>
+            </div>
+            <div class="idea6">
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-o"></i>
+                <h4>XO Game</h4>
+            </div>
+            <div class="idea7">
+                <i class="fa-solid fa-plane"></i>
+                <h4>Passengers Apointment</h4>
+            </div>
+            <div class="idea8">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="idea8">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+
+
+        </div><!--idea class-->
+    </div><!--section_second class-->
+        <div class="section_third" id="file">
+        <h4>This File May Help You In Your Idea Development:</h4>
+        <object data="files/Websites Ideas.pdf" class="pdf"></object>
+
+    </div>
+    <br>
+<div class="gif-container">
+        <img src="Images/image1.png" alt="GIF 1" class="gif">
+        <img src="Images/image2.png" alt="GIF 2" class="gif">
+    </div>
+</div><!--container class-->
+</section>
+<!---End Section--->
+<span class="moveToTheTop">TOP</span>
+<div class="container">
+    <div class="sideBysideImage">
+        <p>you need to learn:</p>
+        <div class="image">
+        <img src="Images/HTML51.png" alt="HTML5">
+        <img src="Images/CSS3.png" alt="CSS3">
+        <img src="Images/JavaScript-logo.png" alt="JAVASCRIPT">
+        </div>
+    </div>
+    <p class="Paragraph">You Can Contact With Out Team To Provide You More Ideas For Your Project:</p>
+    <div class="contact_person">
+        <!--Contact Form Start Here -->
+        <div>
+            <img src="Images/@BasRash_.jpg" alt="">
+            <h3 class="Person_Name">ALI</h3>
+            <span>Software Analysis</span>
+            <h2 class="P_N">+962 000 126 357</h2>
+            <button>Contact Now</button>
+        </div>
+        <div>
+            <img src="Images/b_wffa.jpg" alt="">
+            <h3 class="Person_Name">SUHILA</h3>
+            <span>FrontEnd Developer</span>
+            <h2 class="P_N">+962 000 126 357</h2>
+            <button>Contact Now</button>
+        </div>
+        <div>
+            <img src="Images/zah_68almuhanna.jpg" alt="">
+            <h3 class="Person_Name">Zena</h3>
+            <span>BackEnd Developer</span>
+            <h2 class="P_N">+962 000 126 357</h2>
+            <button>Contact Now</button>
+        </div>
+        <div>
+            <img src="Images/Lifewithc0ding.jpg" alt="">
+            <h3 class="Person_Name">Sondos</h3>
+            <span>FullStack Developer</span>
+            <h2 class="P_N">+962 000 126 357</h2>
+            <button>Contact Now</button>
+        </div>
+    </div>
+</div>
+<!--Start Footer-->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><h3>Products</h3></li>
+                <li><a href="#">mobile apps</a></li>
+                <li><a href="#">web apps</a></li>
+                <li><a href="#">games</a></li>
+            </ul>
+            <ul>
+                <li><h3>locations</h3></li>
+                <li><a href="#">online site</a></li>
+                <li><a href="#">Amman-JO</a></li>
+                <li><a href="#">Maddaba</a></li>
+            </ul>
+            <ul class="Copyright">
+                @Copyright Websites Ideas 2023- All Right Reserved.   
+            </ul>
+        </div>
+    </footer>
+    
+
+<!--End Footer-->
+<!--Js File-->
+<script src="func.js"></script>
+</body>
+</html>

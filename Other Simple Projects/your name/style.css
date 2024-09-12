@@ -1,0 +1,82 @@
+/*small*/
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+/*medium*/
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*larg*/
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%235f0de4' fill-opacity='0.24'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.container {
+    background-color: rgba(88, 15, 88, 0.521);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+#name_data {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #5c0080b7;
+}
+input[type=text]:focus {
+    color: wheat;
+    border :none;
+    outline: none;
+    background-color: rgba(173, 216, 230, 0);
+    box-shadow: inset -1px -1px 10px #00807a83;
+}
+button {
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    font-weight: 590;
+    background-color: #000;
+    color: whitesmoke;
+    border-radius: 10%;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+div#result {
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
