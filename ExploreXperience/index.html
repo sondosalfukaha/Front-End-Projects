@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreXperience</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png
+    " type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Coda&family=Cormorant+SC:wght@300&family=Fasthand&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,800;1,100;1,200;1,300&family=Kanit:ital,wght@0,100;0,400;0,600;0,800;1,500;1,600&family=Lilita+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mynerve&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+   
+   <nav>
+      <div class="nav-bar">
+         <i class='bx bx-menu sidebarOpne'></i>
+         <span class="logo"><a href="#">Explore<span style="color: blue;" class="X">X</span><span style="color: #9e9e13;">p</span><span style="color: aqua;">e</span><span style="color: blueviolet;">r</span><span style="color: violet;">i</span><span style="color: tomato;">e</span><span style="color: steelblue;">n</span><span style="color: springgreen;">c</span>e</a></span>
+         <div class="menu">
+            <div class="logo-toggle">
+               <i class="bx bx-x siderbarClose"></i>
+            </div>
+            <ul class="nav-links">
+               <li><a href="">Home</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Contact Us</a></li>
+               <li><a href="#footer">Locations</a></li>
+            </ul><!--nav-links-->
+         </div><!--menu class-->
+         <div class="darkLight-searchBox">
+            <div class="dark-light">
+               <i class='bx bx-moon moon'></i>
+               <i class='bx bx-sun sun' ></i>
+            </div>
+            <div class="searchBox">
+               <div class="searchToggle">
+                  <i class='bx bx-x cancel'></i>
+                  <i class='bx bx-search search' ></i>
+               </div>
+                  <div class="search-field">
+                     <input type="text" placeholder="Search...">
+                     <i class="bx bx-search"></i>
+                  </div>
+            </div>
+         </div><!--Buttons Class-->
+      </div><!--nav-bar class-->
+   </nav>
+   <section class="overlay">
+      <video autoplay muted loop play-inline>
+      <source src="img/SkyBackground.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+   </video>
+
+      <div class="content">
+         <h1 class="Intro">Explore Your Life Around <br>The World</h1>
+         <div class="button">
+            <a href="#Travel">Travel With Us</a>
+
+         </div>
+      </div>
+      
+   </section>
+   <div class="cards">
+      <h1>Surprise Your self</h1>
+      <div class="container">
+         <div class="card">
+             <div class="content">
+                 <h2>01</h2>
+                 <h3>Regular</h3>
+                 <div class="price">$100</div>
+                 <ul>
+                     <li>10 Websites</li>
+                     <li>20gb SSD</li>
+                     <li>Domain name</li>
+                 </ul>
+                 <a href="#">Get Started</a>
+             </div>
+         </div>
+         <div class="card">
+             <div class="content">
+                 <h2>02</h2>
+                 <h3>Regular</h3>
+                 <div class="price">$250</div>
+                 <ul>
+                     <li>30 Websites</li>
+                     <li>30gb SSD</li>
+                     <li>Domain name</li>
+                 </ul>
+                 <a href="#">Get Started</a>
+             </div>
+         </div>
+         <div class="card">
+             <div class="content">
+                 <h2>03</h2>
+                 <h3>Preium</h3>
+                 <div class="price">$500</div>
+                 <ul>
+                     <li>50 Websites</li>
+                     <li>100gb SSD</li>
+                     <li>Domain name</li>
+                 </ul>
+                 <a href="#">Get Started</a>
+             </div>
+         </div>
+     </div>
+   </div>
+  <script src="js/vanilla-tilt.min.js"></script>
+  <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+          max: 25,
+          speed: 400,
+          glare: true,
+          "max-glare": 1,
+      })
+  </script>
+<footer id='footer'>
+   <div class="abc">
+      <div class="text">
+         <i class='bx bx-current-location' ></i>
+         <h2>Nearest Experience to You</h2>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.58518276454!2d40.011361601901775!3d21.436254371790135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2sjo!4v1699535023356!5m2!1sar!2sjo" width="50%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+</footer>
+
+<script src="Js/function.js"></script>
+</body>
+
+</html>
