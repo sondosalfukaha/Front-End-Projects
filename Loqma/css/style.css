@@ -1,0 +1,601 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --yellow: #856400;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
+ul {
+    list-style: none;
+}
+.both {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, #232327a8, #af9e9ee1),
+    url("/img/Back1.png");
+    height: 100vh;
+    }
+    
+/*Before header*/
+.general_Information {
+    margin-bottom: -15px;
+    font-size: 12px;
+}
+
+.general_Information a ,
+.general_Information span,hr {
+    color: black;
+}
+
+/* start header */
+header .brand {
+    font-family: cursive;
+    font-size: 4rem;
+    position: relative;
+    color: black;
+}
+header p {
+    font-family: cursive;
+    font-size: 13px;
+    color: black;
+}
+
+.navbar {
+    margin-top: -36px;
+}
+.brandHint::before {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 1px;
+    background:var(--yellow);
+    bottom: 0;
+    
+}
+.brand::before {
+    content: '\f7b6';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 20px;
+    color: var(--yellow);
+    top: 20px;
+    right: 15px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+} 
+.nav-link {
+    margin-right: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+.nav-link:hover {
+    background-color: var(--yellow);
+    font-weight: 600;
+    color: white;
+}#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(207, 196, 218);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+/* landing */
+.landing .text h1 {
+    font-family: fantasy;
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-toggler[aria-expanded='true'] {
+    border-color: var(--yellow);
+}
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
+    color: var(--yellow);
+}
+
+
+.down {
+    margin-top: 5%;
+    font-size: 50px;
+}
+.card-body .starss span  {
+    margin-left: 5px;
+    color: #808080;
+    transition: color .2s, transform .2s;
+    font-size: 30px;
+    -webkit-transition: color .2s, transform .2s;
+    -moz-transition: color .2s, transform .2s;
+    -ms-transition: color .2s, transform .2s;
+    -o-transition: color .2s, transform .2s;
+}
+.starss {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.starss span:hover {
+    color: orangered;
+    transform: scale(1.3);
+}
+.starss span:hover ~ span {
+    color: orangered;
+}
+
+.starss span[data-clicked] {
+    color: orangered;
+}
+.starss span[data-clicked] ~ span {
+    color: orangered;
+}
+
+.card-body .item {
+    margin-left: -2px;
+    
+}
+.card-body .CounterMinus {
+    margin-left: -2px;
+}
+.Cold_Baverages .card.A img {
+    transition: .3s !important;
+    transform: translate(50%,0%) !important;
+    -webkit-transition: .3s !important;
+    -moz-transition: .3s !important;
+    -ms-transition: .3s !important;
+    -o-transition: .3s !important;
+    -webkit-transform: translate(50%,0%) !important;
+    -moz-transform: translate(50%,0%) !important;
+    -ms-transform: translate(50%,0%) !important;
+    -o-transform: translate(50%,0%) !important;
+}
+.Cold_Baverages .card.A img:hover {
+    transform: translate(50%,-10%) !important;
+    -webkit-transform: translate(50%,-10%) !important;
+    -moz-transform: translate(50%,-10%) !important;
+    -ms-transform: translate(50%,-10%) !important;
+    -o-transform: translate(50%,-10%) !important;
+}  
+.Hot_Baverages img {
+    transition: .3s;
+    transform: translateY(0%) !important;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transform: translateY(0%) !important;
+    -moz-transform: translateY(0%) !important;
+    -ms-transform: translateY(0%) !important;
+    -o-transform: translateY(0%) !important;
+}
+.Hot_Baverages img:hover {
+    transform: translateY(-10%) !important;
+    -webkit-transform: translateY(-10%) !important;
+    -moz-transform: translateY(-10%) !important;
+    -ms-transform: translateY(-10%) !important;
+    -o-transform: translateY(-10%) !important;
+}
+.CounterMinus.disable,
+.rest.disable {
+    opacity: 0.5;
+    cursor: no-drop;
+    pointer-events: none;
+}
+.choosedrinktype li {
+    margin-left: 20px;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.choosedrinktype li.active {
+    background-color: #856400;
+}
+.Hot_Baverages img {
+    margin-top: -50px !important;
+}
+.A {
+
+    border-radius: 10px;
+    background-color: #000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.bav {
+    background-image: url('/img/Colorcard-hex_ffc107-www.colorbook.io.png');    
+}
+iframe {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+.cart {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.cart:hover {
+    opacity: 0.1;
+}
+@media (max-width : 767px) {
+        
+    .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 70px;
+        margin-top: -70px;
+    }
+
+.general_Informatio {
+    display: none;
+}
+.general_Information a ,
+.general_Information svg,
+.general_Information span {
+    display: none;
+}
+hr {
+    display: none;
+}
+header {
+    margin-top: 30px;
+}
+header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.brandHint::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 1px;
+    background:var(--yellow);
+    bottom: 0;
+    
+}
+
+}
+
+.Gallary {
+    background : url('/img/Colorcard-hex_ffc107-www.colorbook.io.png');
+    height: 100vh;
+}
+
+.col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+    -moz-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    -o-transform: translateY(40%);
+    margin-top: 11%;
+}
+.slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    -webkit-animation: rotate 30s linear infinite;
+
+}
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+        -webkit-transform: perspective(1000px) rotateY(0deg);
+        -moz-transform: perspective(1000px) rotateY(0deg);
+        -ms-transform: perspective(1000px) rotateY(0deg);
+        -o-transform: perspective(1000px) rotateY(0deg);
+}
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+        -webkit-transform: perspective(1000px) rotateY(360deg);
+        -moz-transform: perspective(1000px) rotateY(360deg);
+        -ms-transform: perspective(1000px) rotateY(360deg);
+        -o-transform: perspective(1000px) rotateY(360deg);
+}
+}
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(300px);
+}
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+    -webkit-transform: translateY(-50px) scale(1.2);
+    -moz-transform: translateY(-50px) scale(1.2);
+    -ms-transform: translateY(-50px) scale(1.2);
+    -o-transform: translateY(-50px) scale(1.2);
+}
+.texttt {
+    transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+    -moz-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    -o-transform: translateY(40%);
+}
+@media (min-width:768px) {
+    .bav {
+        padding-top: 150px;
+        clip-path: polygon(100% 0%, 100% 0.5%, 100% 60%, 100% 100%, 0% 100%, 0% 60%, 0% 12.3%);
+
+    }
+    .Baverages h1 ,
+.Desert h1 {
+    font-family: cursive;
+}
+    .Gallary {
+        clip-path: polygon(50% 0%, 100% 0%, 100% 64.5%, 0% 100%, 0% 0%);
+    }
+    .texttt h1,
+    .HowToJoin {
+        font-family: cursive;
+    }
+}
+@media (max-width:767px) {
+    .texttt h1,
+    .HowToJoin {
+        font-family: fantasy;
+    }
+    .col1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transform: translateY(40%);
+        -webkit-transform: translateY(40%);
+        -moz-transform: translateY(40%);
+        -ms-transform: translateY(40%);
+        -o-transform: translateY(40%);
+        margin-top: 20%;
+    }
+}
+.location_icon,.DesertIcon{
+    font-size: 10rem;
+    color: #ffc10756;
+    margin-bottom: -90px;
+    z-index: -1;
+}
+.bavcIcon {
+    font-size: 10rem;
+    color: #ffffff62;
+    margin-bottom: -120px;
+    z-index: -1;
+}
+.Desert {
+    padding-top: 15px;
+}
+/*to top button*/
+.to-top svg {
+    color: white;
+}
+.to-top {
+    background-color: var(--yellow);
+    position: fixed;
+    bottom: 16px !important;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f24;
+    text-decoration: none;
+    opacity: 0;
+    transition: all .4s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.to-top.active {
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+
+footer {
+    background : url('/img/Colorcard-hex_ffc107-www.colorbook.io.png'); 
+}
+.GithubLink:hover {
+    color: black !important;
+}
+.cardfooter svg {
+    height: 25px;
+}
+.cardfooter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    transition: 0.3s;
+    overflow: hidden;
+    height: 50px;
+    width: 200px;
+}
+.cardfooter::before, .cardfooter::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+}
+.cardfooter .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.cardfooter .social-link1 {
+    color: firebrick;
+}
+.cardfooter .social-link2 {
+    color: blue;
+}
+.cardfooter .social-link3 {
+    color: black;
+}
+.cardfooter .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+}
+
+.cardfooter .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation:  social.4s linear;
+    -webkit-animation:  social .4s linear;
+}
+
+@keyframes social {
+    40% {
+    transform: scale(1.4);
+    }
+
+    60% {
+    transform: scale(0.8);
+    }
+    80% {
+    transform: scale(1.2);
+    }
+
+    100% {
+    transform: scale(1);
+    }
+}
+.first {
+    margin-top: -60px;
+}
+.pricIcon {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.cartIcon {
+    border: 1px #dadd0b3b solid;
+    padding: 9px;
+    border-radius: 50%;
+    transition: 0.3s;
+    font-size: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cartIcon:hover {
+    transform: scale(1.2);
+    background-color: #856400;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.price {
+    font-size: 25px;
+    font-weight: bolder;
+}
