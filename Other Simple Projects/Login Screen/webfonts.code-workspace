@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "webfonts",
+			"path": "../Project 1/webfonts"
+		},
+		{
+			"name": "Project 2",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project 2"
+	}
+}
