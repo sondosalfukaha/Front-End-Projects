@@ -1,7 +1,3 @@
-Here’s a draft for the `README.md` file that can describe the "Khadamate Interface" project, assuming it’s a client-facing project for a graduation thesis:
-
----
-
 # Khadamate Interface
 
 ## Overview
